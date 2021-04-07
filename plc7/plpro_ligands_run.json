@@ -1,0 +1,52 @@
+{
+    "md_counts"     : 960,
+    "ml_counts"     : 1,
+    "gpu_per_node"  : 6,
+    "cpu_per_node"  : 42, 
+
+    "cutoff"        : 8,
+    "selection"     : "protein and name CA",
+
+    "epoch"         : 5,
+    "sample_interval": 20,
+
+    "batch_size"    : 512,
+    "model_type"    : "aae",
+
+    "pdb_dir"       : "/gpfs/alpine/proj-shared/$PROJECTID/$USER/plc7/Parameters/plpro_6w9c/pdbs", 
+    "top_dir"       : "/gpfs/alpine/proj-shared/$PROJECTID/$USER/plc7/Parameters/plpro_6w9c/top_dir",
+    "h5_tmp_dir"    : "/gpfs/alpine/proj-shared/$PROJECTID/$USER/plc7/h5_tmp",
+    
+    "conda_path"    : "/gpfs/alpine/proj-shared/$PROJECTID/conda/openmm",
+    "conda_openmm"  : "/gpfs/alpine/proj-shared/$PROJECTID/conda/openmm",
+    "conda_pytorch" : "/gpfs/alpine/proj-shared/$PROJECTID/conda/pytorch_multiligand",
+
+    "base_path"     : "/gpfs/alpine/proj-shared/$PROJECTID/$USER/plc7",
+    "molecules_path": "/gpfs/alpine/$PROJECTID/proj-shared/molecules_plpro",
+
+    "system_name"   : "plpro_6w9c",
+    "residues"      : 309,
+    "init_weights"  : "/gpfs/alpine/proj-shared/$PROJECTID/$USER/pretrain/plpro_6w9c/epoch-100-20200930-231639-pretrained.pt",
+  
+    "ml_hpo" : [
+        {
+            "optimizer"    : "name=RMSprop,lr=1e-5",
+            "loss_weights" : "lambda_rec=0.5,lambda_gp=10",
+            "latent_dim"   : 64,
+            "batch_size"   : 32
+        }
+    ],
+
+    "CUR_STAGE"     : 0,
+    "MAX_STAGE"     : 2,
+    "RETRAIN_FREQ"  : 1,
+    "LEN_initial"   : 1,
+    "LEN_iter"      : 1,
+
+
+    "resource"      : "ornl.summit",
+    "queue"         : "batch",
+    "schema"        : "local",
+    "walltime"      : 120,
+    "project"       : "$PROJECTID"
+}
