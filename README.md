@@ -8,4 +8,4 @@
 - PLC-6: 20 ORNL Summit nodes, PLPro, 120 Ligand, 120 total tasks 
 - PLC-7: 240 ORNL Summit nodes, PLPro, 960 Ligand, 960 total tasks 
 - PF-1: DeepDriveMD-F, 30 LLNL Lassen nodes, BBA
-- PF-1: DeepDriveMD-S, 30 LLNL Lassen nodes, BBA 
+- PF-2: DeepDriveMD-S, 30 LLNL Lassen nodes, BBA 
