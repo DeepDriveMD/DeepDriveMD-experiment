@@ -1,4 +1,4 @@
-# DeepDriveMD-experiment
+# DeepDriveMD-experiment (for SC21 submission)
 
 - plc1: 20 ORNL Summit nodes, 3CLPro, 1 Ligand, 250 total tasks
 - plc2: 30 LLNL Lassen nodes, 3CLPro, 1 Ligand, 250 total tasks
